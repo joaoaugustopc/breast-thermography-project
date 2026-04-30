@@ -1,0 +1,23 @@
+[project]
+name = "thermalmammonet"
+version = "0.1.0"
+description = "Treinamento e experimentos com mamografia termica."
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy<2",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.3.3",
+    "pillow>=12.2.0",
+    "pytesseract>=0.3.13",
+    "scikit-learn>=1.7.2",
+    "scipy>=1.15.3",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "tqdm>=4.67.3",
+    "ultralytics>=8.4.43",
+]
+
+[tool.uv]
+package = false

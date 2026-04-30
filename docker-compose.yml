@@ -1,0 +1,17 @@
+services:
+  thermal-img-experiment:
+    image: breast_cancer_project
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/experiment
+    command: ["python", "-m", "main"]
+    container_name: experimento-redes-neurais
+    tty: true
+    stdin_open: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
